@@ -59,7 +59,7 @@
   font-weight: normal;
 }
 
-body {
+/*body {
   min-height: 100vh;
   color: var(--color-text);
   background: var(--color-background);
@@ -68,6 +68,41 @@ body {
   font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
     Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}*/
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Adding this to account for overflow-y: scroll set by the Bulma library */
+html {
+  overflow: auto;
+}
+
+body {
+  position: relative;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+
+  color: var(--color-text);
+  background: var(--color-background);
+  font-size: 16px;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
